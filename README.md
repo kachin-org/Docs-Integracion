@@ -1,4 +1,5 @@
-# Documentación Técnica de Integración (v1.0.1)
+# Documentación Técnica de Integración con Subagentes (v1.0.1)
+
 # Tabla de Contenidos
 
 - [Introducción](#introducción)
@@ -53,7 +54,18 @@ Este documento detalla el proceso de integración con el servicio de envío de t
 ---
 
 ## Autenticación en los endpoints
+
 Este endpoint requiere autenticación mediante un token Bearer en el encabezado `Authorization`. Además, se deben proporcionar varios encabezados para la identificación del agente y del operador.
+
+### Solicitud del Token
+```sh
+curl --location 'https://login.microsoftonline.com/19984b4a-950f-45c8-a475-065352ef0766/oauth2/v2.0/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id={App-Id}' \
+--data-urlencode 'client_secret={App-Secret}' \
+--data-urlencode 'scope=https://{URL_BASE}/money-transfer/.default'
+```
 
 ### Encabezados Requeridos
 Los siguientes encabezados son necesarios en cada petición que se envie a los endpoints. 
