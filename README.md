@@ -1,5 +1,36 @@
 # Documentación Técnica de Integración (v1.0.1)
-[[toc]]
+# Tabla de Contenidos
+
+- [Introducción](#introducción)
+- [Proceso de envíos con Subagentes](#proceso-de-envios-con-subagentes)
+- [Proceso de pagos con subagentes](#proceso-de-pagos-con-subagentes)
+- [Diagrama de Comunicación de Componentes](#diagrama-de-comunicacion-de-componentes)
+- [Autenticación en los Endpoints](#autenticación-en-los-endpoints)
+  - [Encabezados Requeridos](#encabezados-requeridos)
+- [Ejemplo de Respuesta de Error](#ejemplo-de-respuesta-de-error)
+  - [Códigos de Error](#códigos-de-error)
+- [Endpoint: Consulta de Transacción de Envío Disponible](#endpoint-consulta-de-transacción-de-envío-disponible)
+  - [Ejemplo de Solicitud](#ejemplo-de-solicitud)
+  - [Respuesta Exitosa](#respuesta-exitosa)
+    - [Ejemplo de Respuesta](#ejemplo-de-respuesta)
+    - [Descripción de Campos](#descripción-de-campos)
+- [Endpoint: Proceso de Transacción Disponible](#endpoint-proceso-de-transacción-disponible)
+  - [Cuerpo de la Solicitud (`POST`)](#cuerpo-de-la-solicitud-post)
+  - [Ejemplo de Solicitud con `cURL`](#ejemplo-de-solicitud-con-curl)
+  - [Respuesta Exitosa](#respuesta-exitosa-1)
+    - [Ejemplo de Respuesta](#ejemplo-de-respuesta-1)
+    - [Explicación de los Campos de la Respuesta](#explicación-de-los-campos-de-la-respuesta)
+- [Endpoint: Consulta de Transacción de Pago Disponible](#endpoint-consulta-de-transacción-de-pago-disponible)
+  - [Ejemplo de Solicitud](#ejemplo-de-solicitud-1)
+  - [Ejemplo de Respuesta](#ejemplo-de-respuesta-2)
+  - [Descripción de Campos](#descripción-de-campos-1)
+- [Endpoint: Proceso de Transacción de Pago Disponible](#endpoint-proceso-de-transacción-de-pago-disponible)
+  - [Cuerpo de la Solicitud (`POST`)](#cuerpo-de-la-solicitud-post-1)
+  - [Ejemplo de Solicitud con `cURL`](#ejemplo-de-solicitud-con-curl-1)
+  - [Respuesta Exitosa](#respuesta-exitosa-2)
+    - [Ejemplo de Respuesta](#ejemplo-de-respuesta-3)
+    - [Explicación de los Campos de la Respuesta](#explicación-de-los-campos-de-la-respuesta-1)
+
 
 ## Introducción
 Este documento detalla el proceso de integración con el servicio de envío de transferencias de giros a través de las API's de Kachin. Se proporcionan ejemplos de solicitud con `cURL`, una descripción de los encabezados requeridos, la estructura de las respuestas esperadas y posibles errores.
