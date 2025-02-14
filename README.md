@@ -1,5 +1,5 @@
 # Documentación Técnica de Integración (v1.0.1)
-[[TOC]]
+[[toc]]
 
 ## Introducción
 Este documento detalla el proceso de integración con el servicio de envío de transferencias de giros a través de las API's de Kachin. Se proporcionan ejemplos de solicitud con `cURL`, una descripción de los encabezados requeridos, la estructura de las respuestas esperadas y posibles errores.
