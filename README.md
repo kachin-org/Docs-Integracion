@@ -66,6 +66,8 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 - [Consulta de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
 - [Proceso de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
 
+---
+
 ## Introducción
 Este documento detalla el proceso de integración con el servicio de envío de transferencias de giros a través de las API's de Kachin. Se proporcionan ejemplos de solicitud con `cURL`, una descripción de los encabezados requeridos, la estructura de las respuestas esperadas y posibles errores.
 
