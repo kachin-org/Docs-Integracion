@@ -25,7 +25,10 @@
   - [Encabezados Requeridos](#encabezados-requeridos)
 - [Ejemplo de Respuesta de Error](#ejemplo-de-respuesta-de-error)
   - [Códigos de Error](#códigos-de-error)
-    
+
+
+---
+
 ## Seleccione una versión:
 
 <div align="center">
@@ -57,6 +60,11 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 - [Consulta de Transacción de Pago](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-pago-disponible)
 - [Proceso de Transacción de Pago](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-de-pago-disponible)
 
+### Versión 3.0
+- [Consulta de Transacción de Envío](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
+- [Proceso de Transacción](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
+- [Consulta de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
+- [Proceso de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
 
 ## Introducción
 Este documento detalla el proceso de integración con el servicio de envío de transferencias de giros a través de las API's de Kachin. Se proporcionan ejemplos de solicitud con `cURL`, una descripción de los encabezados requeridos, la estructura de las respuestas esperadas y posibles errores.
