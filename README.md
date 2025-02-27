@@ -56,15 +56,18 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 
 ### Versión 1.0
 - [Consulta de Transacción de Envío](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-envio-disponible)
-- [Proceso de Transacción](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-disponible)
+- [Proceso de Transacción de Envío](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-disponible)
 - [Consulta de Transacción de Pago](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-pago-disponible)
 - [Proceso de Transacción de Pago](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-de-pago-disponible)
 
 ### Versión 3.0
-- [Consulta de Transacción de Envío](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
-- [Proceso de Transacción](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
-- [Consulta de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
-- [Proceso de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
+
+- [Consulta de Transacción de Envío](../../wiki/Version-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
+- [Proceso de Transacción de Envío](../../wiki/Version-3.0#endpoint-proceso-de-transacción-disponible)
+- [Consulta de Reimpresión de Comprobante de Envío](../../wiki/Version-3.0#endpoint-proceso-de-transacción-de-pago-disponible) `🟢 NEW`
+- [Consulta de Transacción de Pago](../../wiki/Version-3.0#endpoint-consulta-de-transacción-de-pago-disponible)
+- [Proceso de Transacción de Pago](../../wiki/Version-3.0#endpoint-proceso-de-transacción-de-pago-disponible)
+- [Consulta de Reimpresión de Comprobante de Pago](../../wiki/Version-3.0#endpoint-proceso-de-transacción-de-pago-disponible) `🟢 NEW`
 
 ---
 
