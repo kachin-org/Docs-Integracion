@@ -42,7 +42,7 @@
       </td>
       <td align="center" width="400">
         <a href="../../wiki/Versión-3.0" style="text-decoration: none;">
-          <img src="https://img.shields.io/badge/Versión_3.0-Beta-28A745?style=for-the-badge&logo=github&logoColor=white" alt="Versión 3.0 (RC)" width="300"/>
+          <img src="https://img.shields.io/badge/Versión_3.0-RC-28A745?style=for-the-badge&logo=github&logoColor=white" alt="Versión 3.0 (RC)" width="300"/>
         </a>
         <p>Próxima versión con nuevas funcionalidades</p>
       </td>
