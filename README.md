@@ -1,4 +1,19 @@
-# Documentación Técnica de Integración con Subagentes (v1.0.1)
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; table-layout: fixed;">
+    <tr>
+      <td width="230" align="center" style="background-color: #121212; padding: 40px; border: 1px solid #333;">
+        <img src="https://github.com/user-attachments/assets/4c3fe4d4-51d8-494e-a579-7381653f1b2d" alt="Logo de Kachin" width="160" />
+      </td>
+      <td style="background-color: #121212; padding: 20px; border: 1px solid #333; width: calc(100% - 230px);">
+        <h2>Documentación Técnica de Integración con Subagentes</h2>
+        <p><i>versión 1.0.1</i></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+---
 
 # Tabla de Contenidos
 
