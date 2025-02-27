@@ -155,39 +155,37 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 
 ```json
 {
-  "data": null
+  "data": null,
   "code": "400",
   "message": "No current staged money transfer transaction found with temporal code: 206324.",
   "errorCode": "100-10-404",
   "errorDetails": {
-    "details": {
-      "fields": [
-        {
-          "fieldName": "technicalMessage",
-          "fieldMessage": "The temporal code '206324' was not found in the StagedTransactions collection.",
-          "fieldValue": "Not Found",
-          "fieldType": "string"
-        },
-        {
-          "fieldName": "referenceId",
-          "fieldMessage": "Unique reference identifier for tracking the error.",
-          "fieldValue": "txn-206324",
-          "fieldType": "string"
-        },
-        {
-          "fieldName": "affectedModule",
-          "fieldMessage": "Module where the error occurred.",
-          "fieldValue": "MoneyTransferStaging",
-          "fieldType": "string"
-        },
-        {
-          "fieldName": "errorOrigin",
-          "fieldMessage": "Source of the error.",
-          "fieldValue": "CosmosDB query",
-          "fieldType": "string"
-        }
-      ]
-    }
+    "fields": [
+      {
+        "fieldName": "technicalMessage",
+        "fieldMessage": "The temporal code '206324' was not found in the StagedTransactions collection.",
+        "fieldValue": "Not Found",
+        "fieldType": "string"
+      },
+      {
+        "fieldName": "referenceId",
+        "fieldMessage": "Unique reference identifier for tracking the error.",
+        "fieldValue": "txn-206324",
+        "fieldType": "string"
+      },
+      {
+        "fieldName": "affectedModule",
+        "fieldMessage": "Module where the error occurred.",
+        "fieldValue": "MoneyTransferStaging",
+        "fieldType": "string"
+      },
+      {
+        "fieldName": "errorOrigin",
+        "fieldMessage": "Source of the error.",
+        "fieldValue": "CosmosDB query",
+        "fieldType": "string"
+      }
+    ]
   }
 }
 ```
