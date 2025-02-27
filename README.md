@@ -118,22 +118,6 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 | API-Key          | string | Sí        | Clave de acceso a la API. |
 | Authorization    | string | Sí        | Token de autenticación Bearer generado mediante un proceso de login. |
 
-## Ejemplo de Respuesta de Error V1
-```json
-{
-  "code": "100-10-404",
-  "message": "No current staged money transfer transaction found with temporal code: 206324.",
-  "details": "206324"
-}
-```
-
-### Códigos de Error
-| Código        | Descripción |
-|---------------|-------------|
-| 100-10-404   | No se encontró una transacción con el código temporal proporcionado. |
-| 100-10-401   | Token de autenticación inválido o expirado. |
-| 100-10-400   | Algún campo requerido en la petición está ausente o es incorrecto. |
-
 ---
 
 ## Ejemplo de respuesta de API V3
@@ -199,3 +183,20 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 | `errorCode`    | string   | Código de error (nulo en una respuesta exitosa).             |
 | `errorDetails` | object   | Detalles adicionales del error (nulo en éxito).              |
 
+## Ejemplo de Respuesta de Error V1
+```json
+{
+  "code": "100-10-404",
+  "message": "No current staged money transfer transaction found with temporal code: 206324.",
+  "details": "206324"
+}
+```
+
+### Códigos de Error
+| Código        | Descripción |
+|---------------|-------------|
+| 100-10-404   | No se encontró una transacción con el código temporal proporcionado. |
+| 100-10-401   | Token de autenticación inválido o expirado. |
+| 100-10-400   | Algún campo requerido en la petición está ausente o es incorrecto. |
+
+---
