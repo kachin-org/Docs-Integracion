@@ -29,7 +29,7 @@
 
 ---
 
-## Seleccione una versión:
+## Seleccione una versión transaction-engine:
 
 <div align="center">
   <table>
@@ -50,7 +50,24 @@
   </table>
 </div>
 
-## Endpoints Disponibles
+---
+
+## Seleccione una versión ClearingAndSettlementPaymentOrder:
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="400">
+        <a href="../../wiki/Versión-1.0" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/Versión_1.0-RC-28A745?style=for-the-badge&logo=github&logoColor=white" alt="Versión 1.0 (RC)" width="300" height="50"/>
+        </a>
+        <p>Próxima versión con nuevas funcionalidades</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## Endpoints Disponibles Transaction-Engine
 
 En nuestra wiki encontrará documentación detallada sobre los siguientes endpoints:
 
@@ -69,6 +86,12 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 - [Proceso de Transacción de Pago](../../wiki/Versión-3.0#endpoint-proceso-de-transacción-de-pago-disponible)
 - [Consulta de Reimpresión de Comprobante de Pago](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-pago) `🟢 NEW`
 
+## Endpoints Disponibles ClearingAndSettlementPaymentOrder
+
+### Versión 1.0
+
+- [Consulta de Datos del cliente](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío) `🟢 NEW`
+- [Proceso de completar el pago](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío) `🟢 NEW`
 ---
 
 ## Introducción
