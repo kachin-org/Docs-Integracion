@@ -91,7 +91,7 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 ### Versión 1.0
 
 - [Consulta de Datos del cliente](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente) `🟢 NEW`
-- [Proceso de completar el pago](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente) `🟢 NEW`
+- [Proceso de completar el pago](../../wiki/Versión-pay-1.0#endpoint-proceso-de-transacción-de-pago) `🟢 NEW`
 ---
 
 ## Introducción
