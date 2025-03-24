@@ -58,7 +58,7 @@
   <table>
     <tr>
       <td align="center" width="400">
-        <a href="../../wiki/Versión-1.0" style="text-decoration: none;">
+        <a href="../../wiki/Versión-pay-1.0" style="text-decoration: none;">
           <img src="https://img.shields.io/badge/Versión_1.0-RC-28A745?style=for-the-badge&logo=github&logoColor=white" alt="Versión 1.0 (RC)" width="300" height="50"/>
         </a>
         <p>Próxima versión con nuevas funcionalidades</p>
