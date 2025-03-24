@@ -90,8 +90,8 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 
 ### Versión 1.0
 
-- [Consulta de Datos del cliente](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío) `🟢 NEW`
-- [Proceso de completar el pago](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío) `🟢 NEW`
+- [Consulta de Datos del cliente](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente) `🟢 NEW`
+- [Proceso de completar el pago](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente) `🟢 NEW`
 ---
 
 ## Introducción
