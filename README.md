@@ -143,7 +143,7 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 | Authorization    | string | Sí        | Token de autenticación Bearer generado mediante un proceso de login. |
 
 ---
-# Ejemplo de Respuesta de Error V1
+# Ejemplo de Respuesta de Error V1 de transaction-engine
 ```json
 {
   "code": "100-10-404",
@@ -161,7 +161,7 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 
 ---
 
-# Ejemplo de respuestas de API V3
+# Ejemplo de respuestas de API V3 de transaction-engine y v1 de ClearingAndSettlementPaymentOrder
 
 ## 200 - Respuesta exitosa. 
 Un código de estado 200 indica una operación completada con éxito y datos completos.
