@@ -12,7 +12,6 @@
   </table>
 </div>
 
-
 ---
 
 # Tabla de Contenidos
@@ -26,10 +25,9 @@
 - [Ejemplo de Respuesta de Error](#ejemplo-de-respuesta-de-error)
   - [Códigos de Error](#códigos-de-error)
 
-
 ---
 
-## Seleccione una versión transaction-engine:
+## Seleccione una versión transaction-engine
 
 <div align="center">
   <table>
@@ -52,7 +50,7 @@
 
 ---
 
-## Seleccione una versión ClearingAndSettlementPaymentOrder:
+## Seleccione una versión ClearingAndSettlementPaymentOrder
 
 <div align="center">
   <table>
@@ -72,6 +70,7 @@
 En nuestra wiki encontrará documentación detallada sobre los siguientes endpoints:
 
 ### Versión 1.0
+
 - [Consulta de Transacción de Envío](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-envio-disponible)
 - [Proceso de Transacción de Envío](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-disponible)
 - [Consulta de Transacción de Pago](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-pago-disponible)
@@ -81,37 +80,45 @@ En nuestra wiki encontrará documentación detallada sobre los siguientes endpoi
 
 - [Consulta de Transacción de Envío](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-envio-disponible)
 - [Proceso de Transacción de Envío](../../wiki/Versión-3.0#endpoint-proceso-de-transacción-disponible)
-- [Consulta de Reimpresión de Comprobante de Envío](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío) `🟢 NEW`
-- [Consulta de Transacción de Pago](../../wiki/Versión-3.0#endpoint-consulta-de-transacción-de-pago-disponible)
-- [Proceso de Transacción de Pago](../../wiki/Versión-3.0#endpoint-proceso-de-transacción-de-pago-disponible)
-- [Consulta de Reimpresión de Comprobante de Pago](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-pago) `🟢 NEW`
+- [Consulta de Reimpresión de Comprobante de Envío](../../wiki/Versión-3.0#endpoint-reimpresión-de-comprobante-de-envío)
 
-## Endpoints Disponibles ClearingAndSettlementPaymentOrder
+## APIS ClearingAndSettlement - PaymentOrder
 
-### Versión 1.0
+### Versión 1.0 del endpoint
 
-- [Consulta de Datos del cliente](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente) `🟢 NEW`
-- [Proceso de Completar el pago](../../wiki/Versión-pay-1.0#endpoint-proceso-de-transacción-de-pago) `🟢 NEW`
-- [Consultar Voucher](../../wiki/Versión-pay-1.0#endpoint-obtener-voucher) `🟢 NEW`
+- [Consulta de Datos del cliente](../../wiki/Versión-pay-1.0#endpoint-consulta-de-datos-del-cliente)
+- [Proceso de Completar el pago](../../wiki/Versión-pay-1.0#endpoint-proceso-de-transacción-de-pago)
+- [Consultar Voucher](../../wiki/Versión-pay-1.0#endpoint-obtener-voucher)
+
 ---
 
 ## Introducción
+
 Este documento detalla el proceso de integración con el servicio de envío de transferencias de giros a través de las API's de Kachin. Se proporcionan ejemplos de solicitud con `cURL`, una descripción de los encabezados requeridos, la estructura de las respuestas esperadas y posibles errores.
 
 ## Proceso de envios con Subagentes
+
+este proceso se realiza con las versiones de Transaccion-engine tanto en sus versiones V1 y V3
+
 ![image](https://github.com/user-attachments/assets/c3e678c9-d00c-4f95-9b87-d7a146e29c11)
 
-
 ---
+
 ## Proceso de pagos con subagentes
+
+### Apis de Transaccion Engine
+
 ![image](https://github.com/user-attachments/assets/950d6e66-e91f-4daa-a119-4a5b45f43f91)
+
+### Apis de Payment Order
+
+![image](https://github.com/user-attachments/assets/8759bfbe-f426-408b-bd46-b927773151d8)
 
 ---
 
 ## Diagrama de Comunicacion de componentes
 
 ![image](https://github.com/user-attachments/assets/e6852864-b8b2-4c92-888e-a03e32c0e742)
-
 
 ---
 
@@ -120,6 +127,7 @@ Este documento detalla el proceso de integración con el servicio de envío de t
 Este endpoint requiere autenticación mediante un token Bearer en el encabezado `Authorization`. Además, se deben proporcionar varios encabezados para la identificación del agente y del operador.
 
 ### Solicitud del Token
+
 ```sh
 curl --location 'https://login.microsoftonline.com/19984b4a-950f-45c8-a475-065352ef0766/oauth2/v2.0/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
@@ -130,20 +138,23 @@ curl --location 'https://login.microsoftonline.com/19984b4a-950f-45c8-a475-06535
 ```
 
 ### Encabezados Requeridos
-Los siguientes encabezados son necesarios en cada petición que se envie a los endpoints. 
+
+Los siguientes encabezados son necesarios en cada petición que se envie a los endpoints.
 
 | Encabezado       | Tipo   | Requerido | Descripción |
 |------------------|--------|-----------|-------------|
 | Accept           | string | Sí        | Indica que la respuesta debe ser en formato JSON. Valor: `application/json`. |
 | Agent-Id         | string | Sí        | Identificador único del agente que realiza la solicitud. |
 | Agency-Id        | string | Sí        | Identificador único de la agencia asociada al agente. |
-| Operator-Id      | string | Sí        | Identificador único del operador que está procesando la solicitud. |
+| Operator-Id      | string | Sí        | Identificador único del operador que es  tá procesando la solicitud. |
 | Terminal-Id      | string | Sí        | Identificador del terminal desde donde se realiza la transacción. |
 | API-Key          | string | Sí        | Clave de acceso a la API. |
 | Authorization    | string | Sí        | Token de autenticación Bearer generado mediante un proceso de login. |
 
 ---
+
 # Ejemplo de Respuesta de Error V1 de transaction-engine
+
 ```json
 {
   "code": "100-10-404",
@@ -152,7 +163,8 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 }
 ```
 
-### Códigos de Error
+## Códigos de Error
+
 | Código        | Descripción |
 |---------------|-------------|
 | 100-10-404   | No se encontró una transacción con el código temporal proporcionado. |
@@ -161,9 +173,10 @@ Los siguientes encabezados son necesarios en cada petición que se envie a los e
 
 ---
 
-# Ejemplo de respuestas de API V3 de transaction-engine y v1 de ClearingAndSettlementPaymentOrder
+# Respuestas de API V3 de transaction-engine y v1 de ClearingAndSettlementPaymentOrder
 
-## 200 - Respuesta exitosa. 
+## 200 - Respuesta exitosa
+
 Un código de estado 200 indica una operación completada con éxito y datos completos.
 
 ```json
@@ -180,7 +193,9 @@ Un código de estado 200 indica una operación completada con éxito y datos com
   "errorDetails": null
 }
 ```
-## 400-499 - Recurso No Encontrado
+
+## 400-500 - Recurso No Encontrado
+
 Un código de estado 400-4xx sugiere un error del lado del cliente, típicamente cuando no se encuentra un recurso solicitado.
 
 ```json
@@ -237,21 +252,9 @@ Un código de estado 400-4xx sugiere un error del lado del cliente, típicamente
     }
 }
 ```
-## 500 - Error Interno del Servidor
-Un código de estado 500 indica un error inesperado en el lado del servidor que impide completar la solicitud.
-
-Ejemplo de Respuesta
-```json
-{
-  "code": "{ServiceID}-{BusinessCase}-500",
-  "message": "Ocurrió un error interno, por favor contacte a soporte técnico.",
-  "details": "{CTT}"
-}
-```
-
----
 
 ### Estructura de respuesta de API V3
+
 | Campo          | Tipo     | Descripción                                                  |
 |----------------|----------|--------------------------------------------------------------|
 | `data`         | object   | Contiene los datos específicos de la respuesta sea exitosa.  |
