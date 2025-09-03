@@ -27,7 +27,7 @@
 
 ---
 
-## Seleccione una versión transaction-engine
+## Seleccione una versión transaction-engine (APIs de envios)
 
 <div align="center">
   <table>
@@ -44,7 +44,7 @@
 
 ---
 
-## Seleccione una versión ClearingAndSettlementPaymentOrder
+## Seleccione una versión ClearingAndSettlementPaymentOrder (APIs de Pagos)
 
 <div align="center">
   <table>
