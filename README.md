@@ -34,7 +34,7 @@
     <tr>
       <td align="center" width="400">
         <a href="../../wiki/Versión-3.0" style="text-decoration: none;">
-          <img src="https://img.shields.io/badge/Versión_1.0-Estable-0366D6?style=for-the-badge&logo=github&logoColor=white" alt="Versión 1.0 (Estable)" width="300" height="50"/>
+          <img src="https://img.shields.io/badge/Versión_3.0-Estable-0366D6?style=for-the-badge&logo=github&logoColor=white" alt="Versión 3.0 (Estable)" width="300" height="50"/>
         </a>
         <p>Versión actual en producción</p>
       </td>
@@ -63,7 +63,7 @@
 
 En nuestra wiki encontrará documentación detallada sobre los siguientes endpoints:
 
-### Versión 1.0
+### Versión 1.0 (obsoleto)
 
 - [Consulta de Transacción de Envío](../../wiki/Versión-1.0#endpoint-consulta-de-transacción-de-envio-disponible)
 - [Proceso de Transacción de Envío](../../wiki/Versión-1.0#endpoint-proceso-de-transacción-disponible)
